@@ -570,7 +570,7 @@ button:focus {
     margin-top: 10px;
     width: 70px;
     height: 70px;
-    background-image: url('../img/weather-condition-2.png') ;
+    /* background-image: url('../img/weather-condition-2.png') ; */
     background-size: 100%;
 }
 .next-hours-icon img{
@@ -643,7 +643,8 @@ button:focus {
     border: 1px solid #009EE2;
     margin-left: 40px;
 }
-.uv-index-text {
+.uv-index-text,.air-quality-text {
+    margin-top: 10px;
     color: #000;
     font-size: 18px;
     font-weight: 400;
@@ -700,3 +701,10 @@ button:focus {
     line-height: 22px; 
     
 }
+/* graph */
+.chart-container {
+/*     position: absolute;
+    width: 1000px !important;
+    height: 300px !important;
+    font-size: 100px !important; */
+  }
