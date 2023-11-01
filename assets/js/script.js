@@ -1,5 +1,7 @@
-const weatherInformation  = {
-    '0':{
+let city = "Харків";
+const mainWeatherInformation  = {
+    'Харків':{
+        '0':{
         date:'30.10',
         dayOfWeek: 'Сегодня',
         probabilityOfRain: 90,
@@ -69,8 +71,8 @@ const weatherInformation  = {
                 probabilityOfRain: 0
             }
         ]
-    },
-    '1':{
+        },
+        '1':{
         date:'31.10',
         dayOfWeek: 'Завтра',
         probabilityOfRain: 30,
@@ -140,8 +142,8 @@ const weatherInformation  = {
                 probabilityOfRain: 0
             }
         ]
-    },
-    '2':{
+        },
+        '2':{
         date:'01.10',
         dayOfWeek: "Середа",
         probabilityOfRain: 0,
@@ -211,8 +213,8 @@ const weatherInformation  = {
                 probabilityOfRain: 0
             }
         ]
-    },
-    '3':{
+        },
+        '3':{
         date:'02.10',
         dayOfWeek: "Четверг",
         probabilityOfRain: 30,
@@ -225,12 +227,12 @@ const weatherInformation  = {
         uvIndex: 1.7,
         airQuality: 3,
         sun:{
-            sunrise: '06:20',
-            setting: '16:18'
+            sunrise: '06:28',
+            setting: '16:24'
         },
         moon:{
-            sunrise: '17:24',
-            setting: '10:52'
+            sunrise: '17:30',
+            setting: '10:58'
         },
         comingDays:[
             {
@@ -282,8 +284,8 @@ const weatherInformation  = {
                 probabilityOfRain: 0
             }
         ]
-    },
-    '4':{
+        },
+        '4':{
         date:'03.10',
         dayOfWeek: "П'ятниця",
         probabilityOfRain: 50,
@@ -296,12 +298,12 @@ const weatherInformation  = {
         uvIndex: 1.2,
         airQuality: 1.1,
         sun:{
-            sunrise: '06:20',
-            setting: '16:18'
+            sunrise: '06:30',
+            setting: '16:26'
         },
         moon:{
-            sunrise: '17:24',
-            setting: '10:52'
+            sunrise: '17:32',
+            setting: '11:00'
         },
         comingDays:[
             {
@@ -353,8 +355,8 @@ const weatherInformation  = {
                 probabilityOfRain: 0
             }
         ]
-    },
-    '5':{
+        },
+        '5':{
         date:'04.10',
         dayOfWeek: 'Субота',
         probabilityOfRain: 20,
@@ -367,12 +369,12 @@ const weatherInformation  = {
         uvIndex: 1,
         airQuality: 1,
         sun:{
-            sunrise: '06:20',
-            setting: '16:18'
+            sunrise: '06:32',
+            setting: '16:28'
         },
         moon:{
-            sunrise: '17:24',
-            setting: '10:52'
+            sunrise: '17:34',
+            setting: '11:02'
         },
         comingDays:[
             {
@@ -424,8 +426,8 @@ const weatherInformation  = {
                 probabilityOfRain: 0
             }
         ]
-    },
-    '6':{
+        },
+        '6':{
         date:'05.11',
         dayOfWeek: 'Неділя',
         probabilityOfRain: 30,
@@ -438,12 +440,12 @@ const weatherInformation  = {
         uvIndex: 6,
         airQuality: 1,
         sun:{
-            sunrise: '06:20',
-            setting: '16:18'
+            sunrise: '06:34',
+            setting: '16:30'
         },
         moon:{
-            sunrise: '17:24',
-            setting: '10:52'
+            sunrise: '17:36',
+            setting: '11:04'
         },
         comingDays:[
             {
@@ -495,9 +497,509 @@ const weatherInformation  = {
                 probabilityOfRain: 0
             }
         ]
+        }
+    },
+     'Київ':{
+        '0':{
+        date:'30.10',
+        dayOfWeek: 'Сегодня',
+        probabilityOfRain: 90,
+        maxTemperature:17,
+        minTemperature:11,
+        precipitation: 3.2,
+        airHumidity: 47.0,
+        atmosphericSqueeze: 745,
+        windSpeed: 4,
+        uvIndex: 1,
+        airQuality: 1,
+        sun:{
+            sunrise: '06:22',
+            setting: '16:16'
+        },
+        moon:{
+            sunrise: '17:22',
+            setting: '10:50'
+        },
+        comingDays:[
+            {
+                Temperature:17,
+                probabilityOfRain: 90
+            },
+            {
+                Temperature:16,
+                probabilityOfRain: 80
+            },
+            {
+                Temperature:17,
+                probabilityOfRain: 30
+            },
+            {
+                Temperature:16,
+                probabilityOfRain: 0
+            },
+            {
+                Temperature:17,
+                probabilityOfRain: 0
+            },
+            {
+                Temperature:17,
+                probabilityOfRain: 0
+            },
+            {
+                Temperature:17,
+                probabilityOfRain: 0
+            },
+            {
+                Temperature:16,
+                probabilityOfRain: 0
+            },
+            {
+                Temperature:15,
+                probabilityOfRain: 0
+            },
+            {
+                Temperature:15,
+                probabilityOfRain: 0
+            },
+            {
+                Temperature:14,
+                probabilityOfRain: 0
+            },
+            {
+                Temperature:14,
+                probabilityOfRain: 0
+            }
+        ]
+        },
+        '1':{
+        date:'31.10',
+        dayOfWeek: 'Завтра',
+        probabilityOfRain: 30,
+        maxTemperature:18,
+        minTemperature:11,
+        precipitation: 2,
+        airHumidity: 20.0,
+        atmosphericSqueeze: 650,
+        windSpeed: 5.2,
+        uvIndex: 1.5,
+        airQuality: 1.2,
+        sun:{
+            sunrise: '06:24',
+            setting: '16:20'
+        },
+        moon:{
+            sunrise: '17:26',
+            setting: '10:54'
+        },
+        comingDays:[
+            {
+                Temperature:16,
+                probabilityOfRain: 10
+            },
+            {
+                Temperature:16,
+                probabilityOfRain: 20
+            },
+            {
+                Temperature:17,
+                probabilityOfRain: 50
+            },
+            {
+                Temperature:16,
+                probabilityOfRain: 0
+            },
+            {
+                Temperature:17,
+                probabilityOfRain: 0
+            },
+            {
+                Temperature:17,
+                probabilityOfRain: 70
+            },
+            {
+                Temperature:17,
+                probabilityOfRain: 0
+            },
+            {
+                Temperature:16,
+                probabilityOfRain: 0
+            },
+            {
+                Temperature:15,
+                probabilityOfRain: 0
+            },
+            {
+                Temperature:15,
+                probabilityOfRain: 0
+            },
+            {
+                Temperature:14,
+                probabilityOfRain: 0
+            },
+            {
+                Temperature:14,
+                probabilityOfRain: 0
+            }
+        ]
+        },
+        '2':{
+        date:'01.10',
+        dayOfWeek: "Середа",
+        probabilityOfRain: 0,
+        maxTemperature:18,
+        minTemperature:11,
+        precipitation: 2,
+        airHumidity: 23,
+        atmosphericSqueeze: 650,
+        windSpeed: 2,
+        uvIndex: 2.2,
+        airQuality: 1.3,
+        sun:{
+            sunrise: '06:26',
+            setting: '16:22'
+        },
+        moon:{
+            sunrise: '17:28',
+            setting: '10:56'
+        },
+        comingDays:[
+            {
+                Temperature:17,
+                probabilityOfRain: 0
+            },
+            {
+                Temperature:16,
+                probabilityOfRain: 0
+            },
+            {
+                Temperature:17,
+                probabilityOfRain: 0
+            },
+            {
+                Temperature:16,
+                probabilityOfRain: 0
+            },
+            {
+                Temperature:17,
+                probabilityOfRain: 0
+            },
+            {
+                Temperature:17,
+                probabilityOfRain: 0
+            },
+            {
+                Temperature:17,
+                probabilityOfRain: 0
+            },
+            {
+                Temperature:16,
+                probabilityOfRain: 0
+            },
+            {
+                Temperature:15,
+                probabilityOfRain: 0
+            },
+            {
+                Temperature:15,
+                probabilityOfRain: 0
+            },
+            {
+                Temperature:14,
+                probabilityOfRain: 0
+            },
+            {
+                Temperature:14,
+                probabilityOfRain: 0
+            }
+        ]
+        },
+        '3':{
+        date:'02.10',
+        dayOfWeek: "Четверг",
+        probabilityOfRain: 30,
+        maxTemperature:18,
+        minTemperature:11,
+        precipitation: 2,
+        airHumidity: 27,
+        atmosphericSqueeze: 675,
+        windSpeed: 6,
+        uvIndex: 1.7,
+        airQuality: 3,
+        sun:{
+            sunrise: '06:28',
+            setting: '16:24'
+        },
+        moon:{
+            sunrise: '17:30',
+            setting: '10:58'
+        },
+        comingDays:[
+            {
+                Temperature:17,
+                probabilityOfRain: 90
+            },
+            {
+                Temperature:16,
+                probabilityOfRain: 80
+            },
+            {
+                Temperature:17,
+                probabilityOfRain: 30
+            },
+            {
+                Temperature:16,
+                probabilityOfRain: 0
+            },
+            {
+                Temperature:17,
+                probabilityOfRain: 0
+            },
+            {
+                Temperature:17,
+                probabilityOfRain: 0
+            },
+            {
+                Temperature:17,
+                probabilityOfRain: 0
+            },
+            {
+                Temperature:16,
+                probabilityOfRain: 0
+            },
+            {
+                Temperature:15,
+                probabilityOfRain: 0
+            },
+            {
+                Temperature:15,
+                probabilityOfRain: 0
+            },
+            {
+                Temperature:14,
+                probabilityOfRain: 0
+            },
+            {
+                Temperature:14,
+                probabilityOfRain: 0
+            }
+        ]
+        },
+        '4':{
+        date:'03.10',
+        dayOfWeek: "П'ятниця",
+        probabilityOfRain: 50,
+        maxTemperature:18,
+        minTemperature:11,
+        precipitation: 2,
+        airHumidity: 23,
+        atmosphericSqueeze: 700,
+        windSpeed: 4.5,
+        uvIndex: 1.2,
+        airQuality: 1.1,
+        sun:{
+            sunrise: '06:30',
+            setting: '16:26'
+        },
+        moon:{
+            sunrise: '17:32',
+            setting: '11:00'
+        },
+        comingDays:[
+            {
+                Temperature:17,
+                probabilityOfRain: 0
+            },
+            {
+                Temperature:16,
+                probabilityOfRain: 0
+            },
+            {
+                Temperature:17,
+                probabilityOfRain: 30
+            },
+            {
+                Temperature:16,
+                probabilityOfRain: 60
+            },
+            {
+                Temperature:17,
+                probabilityOfRain: 70
+            },
+            {
+                Temperature:17,
+                probabilityOfRain: 20
+            },
+            {
+                Temperature:17,
+                probabilityOfRain: 0
+            },
+            {
+                Temperature:16,
+                probabilityOfRain: 0
+            },
+            {
+                Temperature:15,
+                probabilityOfRain: 0
+            },
+            {
+                Temperature:15,
+                probabilityOfRain: 30
+            },
+            {
+                Temperature:14,
+                probabilityOfRain: 0
+            },
+            {
+                Temperature:14,
+                probabilityOfRain: 0
+            }
+        ]
+        },
+        '5':{
+        date:'04.10',
+        dayOfWeek: 'Субота',
+        probabilityOfRain: 20,
+        maxTemperature:18,
+        minTemperature:11,
+        precipitation: 2,
+        airHumidity: 23,
+        atmosphericSqueeze: 700,
+        windSpeed: 3.8,
+        uvIndex: 1,
+        airQuality: 1,
+        sun:{
+            sunrise: '06:32',
+            setting: '16:28'
+        },
+        moon:{
+            sunrise: '17:34',
+            setting: '11:02'
+        },
+        comingDays:[
+            {
+                Temperature:17,
+                probabilityOfRain: 20
+            },
+            {
+                Temperature:18,
+                probabilityOfRain: 50
+            },
+            {
+                Temperature:17,
+                probabilityOfRain: 10
+            },
+            {
+                Temperature:18,
+                probabilityOfRain: 30
+            },
+            {
+                Temperature:17,
+                probabilityOfRain: 0
+            },
+            {
+                Temperature:17,
+                probabilityOfRain: 0
+            },
+            {
+                Temperature:17,
+                probabilityOfRain: 20
+            },
+            {
+                Temperature:16,
+                probabilityOfRain: 0
+            },
+            {
+                Temperature:15,
+                probabilityOfRain: 0
+            },
+            {
+                Temperature:15,
+                probabilityOfRain: 0
+            },
+            {
+                Temperature:14,
+                probabilityOfRain: 0
+            },
+            {
+                Temperature:14,
+                probabilityOfRain: 0
+            }
+        ]
+        },
+        '6':{
+        date:'05.11',
+        dayOfWeek: 'Неділя',
+        probabilityOfRain: 30,
+        maxTemperature:18,
+        minTemperature:11,
+        precipitation: 2,
+        airHumidity: 23,
+        atmosphericSqueeze: 700,
+        windSpeed: 7,
+        uvIndex: 6,
+        airQuality: 1,
+        sun:{
+            sunrise: '06:34',
+            setting: '16:30'
+        },
+        moon:{
+            sunrise: '17:36',
+            setting: '11:04'
+        },
+        comingDays:[
+            {
+                Temperature:18,
+                probabilityOfRain: 30
+            },
+            {
+                Temperature:18,
+                probabilityOfRain: 40
+            },
+            {
+                Temperature:17,
+                probabilityOfRain: 30
+            },
+            {
+                Temperature:16,
+                probabilityOfRain: 0
+            },
+            {
+                Temperature:17,
+                probabilityOfRain: 40
+            },
+            {
+                Temperature:17,
+                probabilityOfRain: 0
+            },
+            {
+                Temperature:17,
+                probabilityOfRain: 0
+            },
+            {
+                Temperature:16,
+                probabilityOfRain: 0
+            },
+            {
+                Temperature:15,
+                probabilityOfRain: 0
+            },
+            {
+                Temperature:15,
+                probabilityOfRain: 0
+            },
+            {
+                Temperature:14,
+                probabilityOfRain: 0
+            },
+            {
+                Temperature:14,
+                probabilityOfRain: 0
+            }
+        ]
+        }
     }
 }
-
+const weatherInformation = mainWeatherInformation[city];
 
 const nextHoursWeather = document.querySelector('.next-hours-weather__main');
 
@@ -558,11 +1060,14 @@ const nextTimeHoursInput = (actualHours) => {
 
 
 
-const dailyWeatherInput =(dayElement) =>{
-    console.log(dayElement)
-    const date = dayElement.querySelector('.daliy-date');
+const dailyWeatherInput =(dayElement,city) =>{
+    const cityElem =  document.querySelector('#city');
+    cityElem.innerHTML = city;
     const day = dayElement.getAttribute('data-day');
-    const dayOfWeek = dayElement.querySelector('.daliy-day');
+    const WeatherToDay = weatherInformation[day];
+
+    
+   
     const airHumidity = document.querySelector('#air-humidity')
     const atmosphericSqueeze = document.querySelector('#atmospheric-squeeze');
     const windSpeed = document.querySelector('#windSpeed');
@@ -570,26 +1075,34 @@ const dailyWeatherInput =(dayElement) =>{
     
     const airQuality = document.querySelector('#uv-index');
 
+    const sunrise = document.querySelector('.sunrise-value');
+    const setting = document.querySelector('.setting-value');
+
+    const moonrise = document.querySelector('.moonrise-value');
+    const moonsetting = document.querySelector('.moonsetting-value');
 
 
 
 
+    airHumidity.innerHTML = WeatherToDay['airHumidity'];
+    atmosphericSqueeze.innerHTML = WeatherToDay['atmosphericSqueeze'];
+    windSpeed.innerHTML = WeatherToDay['windSpeed'];
+    uvIndex.innerHTML = WeatherToDay['uvIndex'];
+    airQuality.innerHTML = WeatherToDay['airQuality'];
+    sunrise.innerHTML = WeatherToDay['sun']['sunrise'];
+    setting.innerHTML = WeatherToDay['sun']['setting'];
 
+    moonrise.innerHTML = WeatherToDay['moon']['sunrise'];
+    moonsetting.innerHTML = WeatherToDay['moon']['setting'];
 
-    airHumidity.innerHTML = weatherInformation[day]['airHumidity'];
-    atmosphericSqueeze.innerHTML = weatherInformation[day]['atmosphericSqueeze'];
-    windSpeed.innerHTML = weatherInformation[day]['windSpeed'];
-    uvIndex.innerHTML = weatherInformation[day]['uvIndex'];
-    airQuality.innerHTML = weatherInformation[day]['airQuality'];
-
-    document.getElementById('uv-index-bar-ponit').style.marginLeft = (40 * weatherInformation[day]['uvIndex']) + 'px';
-    document.getElementById('air-quality-bar-ponit').style.marginLeft = (40 * weatherInformation[day]['airQuality']) + 'px';
+    document.getElementById('air-quality-bar-ponit').style.marginLeft = (40 * weatherInformation[day]['uvIndex']) + 'px';
+    document.getElementById('uv-index-bar-ponit').style.marginLeft = (40 * weatherInformation[day]['airQuality']) + 'px';
 
     /* ------ */
     nextHoursInput(weatherInformation,day);
 }
 
-const weeklyWeather =document.querySelectorAll('.weekly-weather__daliy');
+const weeklyWeather = document.querySelectorAll('.weekly-weather__daliy');
 
 
 
@@ -600,7 +1113,7 @@ let actualHours = date.getHours();
 
 nextTimeHoursInput(actualHours);
 /* === */
-dailyWeatherInput(document.querySelector('#today'));
+dailyWeatherInput(document.querySelector('#today'),city);
 
 
 weeklyWeather.forEach(element => {
@@ -608,7 +1121,7 @@ weeklyWeather.forEach(element => {
         weeklyWeather.forEach(elementDel => elementDel.classList.remove('_active'));
         element.classList.add('_active');
 
-        dailyWeatherInput(element);
+        dailyWeatherInput(element,city);
     });
 });
 
