@@ -1061,8 +1061,11 @@ const nextTimeHoursInput = (actualHours) => {
 
 
 const dailyWeatherInput =(dayElement,city) =>{
-    const cityElem =  document.querySelector('#city');
-    cityElem.innerHTML = city;
+    const cityElem =  document.querySelectorAll('#city');
+    cityElem.forEach(elem=>{
+        elem.innerHTML = city;
+    })
+    
     const day = dayElement.getAttribute('data-day');
     const WeatherToDay = weatherInformation[day];
 
