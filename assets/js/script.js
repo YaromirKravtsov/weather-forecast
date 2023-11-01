@@ -999,7 +999,7 @@ const mainWeatherInformation  = {
         }
     }
 }
-const weatherInformation = mainWeatherInformation[city];
+let weatherInformation = mainWeatherInformation[city];
 
 const nextHoursWeather = document.querySelector('.next-hours-weather__main');
 
@@ -1125,7 +1125,10 @@ weeklyWeather.forEach(element => {
     });
 });
 
-/* document.querySelector('.search-button').addEventListener('click',()=>{
+document.querySelector('.search-button').addEventListener('click',()=>{
+    const cityValue = document.querySelector('.search-input').value;
+    const cytrElem = document.querySelector('#city');
 
-
-}); */
+    cytrElem.innerHTML = cityValue;
+    
+});
