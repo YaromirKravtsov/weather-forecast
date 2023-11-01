@@ -1092,8 +1092,8 @@ const dailyWeatherInput =(dayElement,city) =>{
     sunrise.innerHTML = WeatherToDay['sun']['sunrise'];
     setting.innerHTML = WeatherToDay['sun']['setting'];
 
-    moonrise.innerHTML = WeatherToDay['moon']['sunrise'];
-    moonsetting.innerHTML = WeatherToDay['moon']['setting'];
+    moonrise.innerHTML = weatherInformation[day]['moon']['sunrise'];
+    moonsetting.innerHTML = weatherInformation[day]['moon']['setting'];
 
     document.getElementById('air-quality-bar-ponit').style.marginLeft = (40 * weatherInformation[day]['uvIndex']) + 'px';
     document.getElementById('uv-index-bar-ponit').style.marginLeft = (40 * weatherInformation[day]['airQuality']) + 'px';
@@ -1125,3 +1125,7 @@ weeklyWeather.forEach(element => {
     });
 });
 
+/* document.querySelector('.search-button').addEventListener('click',()=>{
+
+
+}); */
