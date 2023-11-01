@@ -1058,8 +1058,6 @@ const nextTimeHoursInput = (actualHours) => {
 /* ==================== */
 
 
-
-
 const dailyWeatherInput =(dayElement,city) =>{
     const cityElem =  document.querySelectorAll('#city');
     cityElem.forEach(elem=>{
@@ -1130,8 +1128,16 @@ weeklyWeather.forEach(element => {
 
 document.querySelector('.search-button').addEventListener('click',()=>{
     const cityValue = document.querySelector('.search-input').value;
-    const cytrElem = document.querySelector('#city');
-
+    document.querySelector('.poster-weather').innerHTML ="У "+cityValue +"   ясно, +19 °C";
+    document.querySelector('.poster-feel').innerHTML ="Відчувається як +19 °C"
+    const cytrElem = document.querySelectorAll('#city');
+    cytrElem.forEach(el=>{
+        el.innerHTML = cityValue;
+    })
+    const poster = document.querySelector('.poster__row');
+    
+    poster.style.background = `url('assets/img/poster-bg.jpg')`;
     cytrElem.innerHTML = cityValue;
+
     
 });
