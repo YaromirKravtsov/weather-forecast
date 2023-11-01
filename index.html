@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Document</title>
 </head>
@@ -45,7 +46,7 @@
         <div class="weekly-weather">
             <div class="container">
                 <div class="weekly-weather__row">
-                    <div class="weekly-weather__daliy _active">
+                    <div class="weekly-weather__daliy _active" id = "today" data-day = '0'>
                         <div class="daliy-day">Сьогодні</div>
                         <div class="daliy-date">30.10</div>
                         <div class="daliy-logo">
@@ -59,7 +60,7 @@
                             <span class="lower">11°</span>
                         </div>
                     </div>
-                    <div class="weekly-weather__daliy">
+                    <div class="weekly-weather__daliy" data-day = '1'>
                         <div class="daliy-day">Завтра</div>
                         <div class="daliy-date">31.10</div>
                         <div class="daliy-logo">
@@ -73,7 +74,7 @@
                             <span class="lower">11°</span>
                         </div>
                     </div>
-                    <div class="weekly-weather__daliy">
+                    <div class="weekly-weather__daliy" data-day = '2'>
                         <div class="daliy-day">Середа</div>
                         <div class="daliy-date">01.11</div>
                         <div class="daliy-logo">
@@ -85,7 +86,7 @@
                             <span class="lower">12°</span>
                         </div>
                     </div>
-                    <div class="weekly-weather__daliy">
+                    <div class="weekly-weather__daliy" data-day = '3'>
                         <div class="daliy-day">Четверг</div>
                         <div class="daliy-date">02.11</div>
                         <div class="daliy-logo">
@@ -99,7 +100,7 @@
                             <span class="lower">12°</span>
                         </div>
                     </div>
-                    <div class="weekly-weather__daliy">
+                    <div class="weekly-weather__daliy" data-day = '4'>
                         <div class="daliy-day">П'ятниця</div>
                         <div class="daliy-date">03.11</div>
                         <div class="daliy-logo">
@@ -113,7 +114,7 @@
                             <span class="lower">10°</span>
                         </div>
                     </div>
-                    <div class="weekly-weather__daliy">
+                    <div class="weekly-weather__daliy" data-day = '5'>
                         <div class="daliy-day">Субота</div>
                         <div class="daliy-date">04.11</div>
                         <div class="daliy-logo">
@@ -127,7 +128,7 @@
                             <span class="lower">11°</span>
                         </div>
                     </div>
-                    <div class="weekly-weather__daliy">
+                    <div class="weekly-weather__daliy" data-day = '6'>
                         <div class="daliy-day">Неділя</div>
                         <div class="daliy-date">05.11</div>
                         <div class="daliy-logo">
@@ -174,8 +175,8 @@
                             <div class="weather-parameter-logo"><img src="assets/img/barometer.png" alt=""></div>
                             <div class="weather-parameter--title">Атмосферний тиск</div>
                         </div>
-                        <div id = "air-humidity" class="weather-parameter__value">
-                            745 мм рт.ст 
+                        <div class="weather-parameter__value">
+                            <span  id = "atmospheric-squeeze">700</span> мм рт.ст 
                         </div>
                     </div>
                     <div class="weather-parameter">
@@ -183,8 +184,8 @@
                             <div class="weather-parameter-logo"><img src="assets/img/wind.png" alt=""></div>
                             <div class="weather-parameter--title">Вітер</div>
                         </div>
-                        <div id = "air-humidity" class="weather-parameter__value">
-                            4 м/c
+                        <div  class="weather-parameter__value">
+                            <span  id = "windSpeed">700</span> мм рт.ст 
                         </div>
                     </div>
                 </div>
@@ -262,14 +263,16 @@
                         <div class="air-quality-text">Вказує на забруднення та їх рівень в атмосфері.</div>
                     </div>
                 </div>
-                <a href = "https://www.pogodairadar.com.ua/radar-pohody?center=49.98,36.64&zoom=8.37&layer=wr" class="flex-column">
+                <a href = "https://www.rainviewer.com/map.html?loc=49.9656,36.2363,9&oFa=0&oC=0&oU=0&oCS=0&oF=1&oAP=0&c=3&o=83&lm=0&layer=sat-rad&sm=1&sn=1&hu=0" class="flex-column" target="blank">
                     <div class="precipitation-map">
                         <div class="precipitation-map--title">Карта опадів</div>
-                         <iframe class= "precipitation-map-iframe" src="https://www.rainviewer.com/map.html?loc=50.154,36.4761,9&oFa=0&oC=0&oU=0&oCS=0&oF=1&oAP=0&c=3&o=83&lm=0&layer=sat-rad&sm=1&sn=1&hu=false" ></iframe>
+                         <iframe class= "precipitation-map-iframe" src="https://www.rainviewer.com/map.html?loc=49.9656,36.2363,9&oFa=0&oC=0&oU=0&oCS=0&oF=1&oAP=0&c=3&o=83&lm=0&layer=sat-rad&sm=1&sn=1&hu=0" ></iframe>
                     </div>
                 </a>
             </div>
         </div>
+       <!--  <canvas id="myChart" class="chart-container"></canvas> -->
+
         <footer class="footer">
             <div class="container">
                 <div class="footer__row">
@@ -279,6 +282,7 @@
             </div>
         </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src = "assets/js/script.js"> </script>
 </body>
 </html>
